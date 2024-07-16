@@ -1,0 +1,118 @@
+.heropage {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 89vh;
+    overflow: hidden; /* Ensures containers don't overflow */
+}
+
+.heropage-container1{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    width: 1100px;
+    height: 600px;
+    margin: 30px;
+    /* background:  linear-gradient(to right, #9796f0, #fbc7d4); */
+    background: url('../../asse/heropage/bg1.jpg') no-repeat  center;
+    background-size: cover;
+    border-radius: 20px;
+}
+
+.heropage-container2{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 1100px;
+    height: 600px;
+    margin: 30px;
+    background: url('../../asse/heropage/bg3.jpg') no-repeat  center;
+    background-size: cover;
+    border-radius: 10px;
+}
+
+.heropage-container3{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    width: 1100px;
+    height: 600px;
+    margin: 30px;
+    background: url('../../asse/heropage/bg4.jpg') no-repeat  center;
+    background-size: cover;
+    border-radius: 10px;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.fade-in {
+    animation: fadeIn 1s forwards;
+}
+
+.herosubmenu1, .herosubmenu2, .herosubmenu3 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.herosubmenu1 {
+    margin-right: 15%;
+}
+
+.herosubmenu2 {
+    margin-left: 30px;
+}
+
+.herosubmenu3 {
+    margin-right: 15%;
+}
+
+.submenu1, .submenu2, .submenu3 {
+    text-transform: capitalize;
+    font-size: 1.5rem;
+}
+
+.submenu1 .text1, .submenu2 .text1, .submenu3 .text1 {
+    font-size: 2.5rem;
+    font-weight: 900;
+}
+
+.submenu1 .text2, .submenu2 .text2, .submenu3 .text2,
+.submenu1 .text3, .submenu2 .text3, .submenu3 .text3 {
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+.herosubmenu1 button, .herosubmenu2 button, .herosubmenu3 button {
+    width: 200px;
+    height: 50px;
+    border: 0;
+    border-radius: 30px;
+    color: white;
+    font-size: 1.5rem;
+    background-color: rosybrown;
+}
+
+.herosubmenu2 button {
+    background-color: #FF5A60;
+}
+
+.herosubmenu3 button {
+    background-color: #FE0089;
+}
+@media (max-width: 768px) {
+   .heropage{
+    display: none;
+   }
+}

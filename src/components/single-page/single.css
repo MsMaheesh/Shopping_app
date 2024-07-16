@@ -1,0 +1,128 @@
+.ind-page {
+    width: 100%;
+    padding: 40px;
+    display: flex;
+    gap: 40px;
+    background: linear-gradient(180deg, #fde1ff 0%, #e1ffea22 60%);
+    flex-wrap: wrap; /* Allow wrapping for smaller screens */
+}
+
+.ind-page-left {
+    padding: 20px;
+    width: 40%;
+    height: 60%;
+}
+
+.ind-page-left img {
+    width: 70%;
+    height: 60%;
+}
+
+.ind-page-right ul {
+    list-style: none;
+}
+
+.ind-page-right ul li {
+    margin-bottom: 15px;
+    text-transform: capitalize;
+    font-size: 22px;
+}
+
+.ind-page button {
+    width: 200px;
+    height: 40px;
+    background-color: #fde1ff;
+    border: 0;
+    border-radius: 40px;
+    font-size: 22px;
+    text-transform: capitalize;
+    margin-top: 15px;
+    cursor: pointer;
+}
+
+.ind-page button:hover {
+    color: #fde1ff;
+    background-color: white;
+}
+
+/* Media queries for responsiveness */
+
+@media (max-width: 1200px) {
+    .ind-page {
+        padding: 30px;
+        gap: 30px;
+    }
+    
+    .ind-page-left {
+        width: 50%;
+    }
+}
+
+@media (max-width: 768px) {
+    .ind-page {
+        padding: 20px;
+        gap: 20px;
+        flex-direction: column; /* Stack the columns vertically */
+        align-items: center;
+    }
+
+    .ind-page-left {
+        width: 80%;
+    }
+
+    .ind-page-left img {
+        width: 100%;
+        height: auto;
+    }
+
+    .ind-page-right ul li {
+        font-size: 20px;
+    }
+
+    .ind-page button {
+        width: 180px;
+        font-size: 20px;
+    }
+}
+/* .ind-page{
+    width: 100%;
+    padding: 40px;
+    display: flex;
+    gap: 40px;
+    background: linear-gradient(180deg, #fde1ff 0%, #e1ffea22 60%);
+}
+.ind-page-left{
+    padding: 20px;
+    width:40%;
+    height:60%;
+
+}
+.ind-page-left img{
+    width: 70%;
+    height:60%
+}
+.ind-page-right ul{
+    list-style: none ;
+}
+.ind-page-right ul li{
+    margin-bottom: 15px;
+    text-transform: capitalize;
+    font-size: 22px;
+
+}
+.ind-page button{
+    width: 200px;
+    height: 40px;
+    background-color: #fde1ff;
+    border: 0;
+    border-radius: 40px;
+    font-size: 22px;
+    text-transform: capitalize;
+    margin-top: 15px;
+    cursor: pointer;
+    
+}
+.ind-page button:hover{
+    color:  #fde1ff;
+    background-color:white;
+} */

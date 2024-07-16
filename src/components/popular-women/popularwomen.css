@@ -1,0 +1,125 @@
+.women-container {
+    height: auto; /* Remove fixed height for better responsiveness */
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+    margin: 20px; /* Adjust margin for smaller screens */
+}
+
+.women-container hr {
+    margin-top: 20px;
+    width: 200px;
+    height: 6px;
+    background-color: lightblue;
+    border-radius: 30px;
+}
+
+.women-container .womenitems {
+    display: flex;
+    align-items: center;
+    margin: 20px; /* Adjust margin for smaller screens */
+    gap: 10px;
+    flex-wrap: wrap; /* Allow wrapping of items */
+    justify-content: center; /* Center items */
+}
+
+.women-container .womenitems .womenitem {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+    width: 100%; /* Set to full width for smaller screens */
+    max-width: 250px; /* Max width for larger screens */
+    height: 450px; /* Adjust height */
+    margin: 10px;
+    box-shadow: 5px 5px 5px lavender;
+}
+
+.women-container .womenitems .womenitem img {
+    width: 90%;
+    height: 80%; /* Adjust height */
+    object-fit: cover;
+}
+
+.womenimg:hover {
+    transform: translateY(2px) scale(1.02);
+}
+
+.womenitem p {
+    font-size: 14px;
+}
+
+h6 {
+    color: darkgray;
+    padding-bottom: 10px;
+    text-decoration: line-through;
+}
+@media (max-width: 768px) {
+    .women-container {
+        margin: 20px;
+    }
+
+    .women-container .womenitems {
+        flex-direction: column;
+    }
+
+    .women-container .womenitems .womenitem {
+        width: 90%;
+    }
+}
+/* Media queries for responsiveness */
+/* .women-container{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+    margin: 50px;
+    
+}
+.women-container hr{
+    margin-top: 20px;
+    margin-left: -0px;
+    width: 200px;
+    height: 6px;
+    background-color:lightblue;
+    border-radius: 30px;
+}
+.women-container .womenitems{
+    display: flex;
+    align-items: center;
+    margin: 40px;
+    gap: 10px;
+    
+}
+.women-container .womenitems .womenitem{
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+    width: 60%;
+    height: 450px;
+    margin: 10px;
+    box-shadow: 5px 5px 5px lavender;
+}
+.women-container .womenitems .womenitem img{
+    width:90%;
+    height: 300px;
+  
+}
+.womenimg:hover{
+    transform: translateY(2px) scale(1.02);  
+}
+.wonenitem p{
+    font-size: 14px;
+}
+h6{
+    color: darkgray;
+    padding-bottom: 10px;
+    text-decoration: line-through;
+} */
+
+
